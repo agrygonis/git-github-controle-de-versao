@@ -38,7 +38,7 @@ https://devhints.io/git-log
 
 > Nunca comitar o que não funciona.
 
-> Também não é interessante deixar para commitar apenas no final de uma .feature
+> Também não é interessante deixar para commitar apenas no final de uma feature.
 
 ## Repositório remoto
 
