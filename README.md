@@ -44,17 +44,30 @@ https://devhints.io/git-log
 
 Utilizado para compartilhar o conteúdo versionado.
 
-    > git init --bare #Criar um repositório remoto só para o controle de alterações
-    > git remote #Listar repositório remoto
-    > git remote add local <caminho repositorio remoto> #Adicionar repositorio remoto, qualquer endereço valido para um repositório Git.
-    > git remote -v #Listar com detalhes repositórios remotos
+    # Criar um repositório remoto só para o controle de alterações, sem working tree.
+    > git init --bare
+    
+    # Listar repositório remoto.
+    > git remote
+    
+    # Adicionar repositorio remoto, qualquer endereço valido para um repositório Git.
+    > git remote add <nome> <caminho repositorio remoto>
+    
+    # Listar com detalhes repositórios remotos.
+    > git remote -v 
+
+    # Enviar para repositório remoto
+    > git push <nome repo remoto> <nome branch>
+
+    # Atualizar repositório local a partir do remoto
+    > git pull <nome repo remoto> <nome branch>
 
 ## Curiosidades
 Porque a master agora é main?
 Para ser inclusivo, não representar preconceito.
 
-    git branch -m master main
-    git push -u origin main
+    > git branch -m master main
+    > git push -u origin main
 
 ## Material Complementar
 
