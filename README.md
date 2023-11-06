@@ -14,6 +14,11 @@ https://git-scm.com/downloads/win
 ## Confirmar se instalado e qual versão
     > git --version
 
+## Iniciar a versionamento de arquivos e sub-diretórios de um diretório
+    > git init
+
+> Tenha certeza de qual diretório esta para executar o commando git init.
+
 ## Git Configurações
     git config --local # Pasta
     git config --global # Maquina
@@ -65,9 +70,17 @@ Utilizado para compartilhar o conteúdo versionado.
     # Enviar para repositório remoto com '-u', que defini remoto padrão para branch
     > git push -u <nome repo remoto> <nome branch>
 
+## Copiar o conteúdo de um repositório remoto
+    > git clone <caminho do repositório remoto>
+
+## Git Clone vs. Git Pull
+> git clone: copia repositório remoto para seu repositório local, ou seja, se já existir, sobrepõe o local.
+
+> git pull: atualiza o conteúdo do repositório local , ou seja, manterm atualizado o repositório local a partir do remoto.
+
 ## Curiosidades
 Porque a master agora é main?
-Para ser inclusivo, não representar preconceito.
+Para ser inclusivo, não representar preconceito \o/
 
     > git branch -m master main
     > git push -u origin main
