@@ -104,6 +104,10 @@ Utilizado para compartilhar o conteúdo versionado.
     > git checkout master
     > git merge qualquer
 
+    # Coloca a branch Master na mesma linha de desenvolvimento ou tempo de outra qualquer
+    > git checkout master
+    > git rebase qualquer
+
     # Uma visão "grafica" da linha de desenvolvimento ou tempo entre as branches
     > git log --graph
 
