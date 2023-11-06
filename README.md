@@ -62,6 +62,9 @@ Utilizado para compartilhar o conteúdo versionado.
     # Atualizar repositório local a partir do remoto
     > git pull <nome repo remoto> <nome branch>
 
+    # Enviar para repositório remoto com '-u', que defini remoto padrão para branch
+    > git push -u <nome repo remoto> <nome branch>
+
 ## Curiosidades
 Porque a master agora é main?
 Para ser inclusivo, não representar preconceito.
