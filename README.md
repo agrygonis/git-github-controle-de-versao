@@ -116,6 +116,19 @@ Utilizado para compartilhar o conteúdo versionado.
 Branch para a Branch ativa.
 - O Rebase aplica os commits de outra branch na branch atual. Sincroniza as duas branches, a ativa com a informada.
 
+## Git Desfazendo (ctrl Z)
+Para navegar entre os estados do versionamento
+
+    # Para desfazer mudanças em arquivo(s) (ctrl z no aquivos)
+    > git checkout -- <nome do aquivo a remover alterações>
+
+    # Para remover arquivo do stage (ctrl z no add)
+    > git reset HEAD <nome do aquivo>
+
+    # Para reverter um commit (ctrl z no commit)
+    > git log
+    > git revert <id do commit coletado no log>
+
 ## Boas práticas com Git
 - Sempre antes de iniciar a trabalhar em um repositórilo local, para iniciar uma nova demanda, faça um Git Pull, para ter certeza que esta iniciando um trabalho na versão mais atual da Branch.
 - Em equipes, evite trabalhar no mesmo trecho de código, seja um método, uma função, um recurso e até mesmo uma feature.
