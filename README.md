@@ -91,6 +91,9 @@ Utilizado para compartilhar o conteúdo versionado.
     # Alterar Branch de trabalho ou ativa no repositório (diretório)
     > git checkout <nome da branch>
 
+    # Cria e ja altera ou foca para nova branch
+    > git checkout -b <nom nova branch>
+
 ## Merges e Rebase
 
 > Merge em geral é mais indicado para trabalhos com branches compartilhadas, onde há várias pessoas envolvidas alterando diversas branches. Se você quer preservar o histórico completo do projeto, independente da complexidade.
