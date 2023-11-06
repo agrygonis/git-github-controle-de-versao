@@ -100,9 +100,17 @@ Utilizado para compartilhar o conteúdo versionado.
 
 > Rebase em geral, é mais indicado para projetos pessoais, times pequenos ou projetos simples. Pode ser util para "limpar" linhas do tempo de repositórios que se tornaram muito poluídas pelo excesso de merging e branching. Pode facilitar a resolução de conflitos, porém pode também ser mais complicado voltar o código ao estágio anterior em caso de conflitos mais complexos.
 
+    # Traz o trabalho feito na Branch Qualquer para Master
+    > git checkout master
+    > git merge qualquer
+
+    # Uma visão "grafica" da linha de desenvolvimento ou tempo entre as branches
+    > git log --graph
+
 ### Merge Vs. Rebase: 
-- O Merge junta os trabalhos e gera um Merge Commit. 
-- O Rebase aplica os commits de outra branch na branch atual.
+- O Merge junta os trabalhos e gera um Merge Commit. Leva as mudanças de outra 
+Branch para a Branch ativa.
+- O Rebase aplica os commits de outra branch na branch atual. Sincroniza as duas branches, a ativa com a informada.
 
 ## Boas práticas com Git
 - Sempre antes de iniciar a trabalhar em um repositórilo local, para iniciar uma nova demanda, faça um Git Pull, para ter certeza que esta iniciando um trabalho na versão mais atual da Branch.
