@@ -116,8 +116,14 @@ Utilizado para compartilhar o conteúdo versionado.
 Branch para a Branch ativa.
 - O Rebase aplica os commits de outra branch na branch atual. Sincroniza as duas branches, a ativa com a informada.
 
+## Git Checkout
+Para navegar entre estados do versionamento
+
+    # Para navegar entre os checkouts
+    > git log --oneline
+    > git checkout <id commit>
+
 ## Git Desfazendo (ctrl Z)
-Para navegar entre os estados do versionamento
 
     # Para desfazer mudanças em arquivo(s) (ctrl z no aquivos)
     > git checkout -- <nome do aquivo a remover alterações>
@@ -128,6 +134,18 @@ Para navegar entre os estados do versionamento
     # Para reverter um commit (ctrl z no commit)
     > git log
     > git revert <id do commit coletado no log>
+
+## Git Stash
+Para armazenar "de lado ou para depois" temporariament algumas alterações
+
+    # Para levar a alterações para o stash
+    > git stash
+    # Listar o que esta armazendo no stash
+    > git stash list
+    # Para tirar do stash e voltar para branch
+    > git stash drop
+
+> Use o stash para quando precisa atender outra tarefa sem terminar o que estava fazendo e não perder o trabalho ou impactar com um commit de algo não funcional.
 
 ## Boas práticas com Git
 - Sempre antes de iniciar a trabalhar em um repositórilo local, para iniciar uma nova demanda, faça um Git Pull, para ter certeza que esta iniciando um trabalho na versão mais atual da Branch.
