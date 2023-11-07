@@ -147,6 +147,23 @@ Para armazenar "de lado ou para depois" temporariament algumas alterações
 
 > Use o stash para quando precisa atender outra tarefa sem terminar o que estava fazendo e não perder o trabalho ou impactar com um commit de algo não funcional.
 
+## Git Diff
+Para mostrar as diferenças de modo a mostrar o conteúdo diferente
+
+    # Para mostrar o que foi alterado antes de add o(s) arquivo(s)
+    > git diff
+    # Para mostrar a diferença entre dois commits
+    > git diff <id commit a>..<id commit d>
+
+## Git Tag
+Gera um marco no versionamento
+
+    > git tag 
+
+> Uma tag no Git é uma referência estática a um ponto específico na história do repositório. Usadas principalmente para identificar versões estáveis do software.
+
+> Uma Release no Github é uma versão específica do projeto que é disponibilizada para download ou deploy. Uma release geralmente contém arquivos compilados, binários, documentação ou qualquer outra coisa necessária para distribuir o software.
+
 ## Boas práticas com Git
 - Sempre antes de iniciar a trabalhar em um repositórilo local, para iniciar uma nova demanda, faça um Git Pull, para ter certeza que esta iniciando um trabalho na versão mais atual da Branch.
 - Em equipes, evite trabalhar no mesmo trecho de código, seja um método, uma função, um recurso e até mesmo uma feature.
